@@ -1,7 +1,6 @@
 {
   "name": "04-bitmap-transformer",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "eslint . && jest --coverage"
@@ -30,5 +29,6 @@
   "dependencies": {
     "dotenv": "^5.0.1",
     "winston": "^3.0.0-rc4"
-  }
+  },
+  "description": ""
 }
