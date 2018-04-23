@@ -1,4 +1,5 @@
 const parseBitmap = module.exports = {};
+const logger = require('./logger');
 
 parseBitmap.parse = (buffer) => {
   // TODO: ADD ERROR CHECKS
@@ -17,5 +18,6 @@ parseBitmap.parse = (buffer) => {
   
   parsedBitmap.colorTable = buffer.slice(COLOR_TABLE_OFFSET, COLOR_TABLE_SIZE);
 
+  logger.log(logger.VERBOSE, parsedBitmap.colorTable);
   return parsedBitmap;
 };
