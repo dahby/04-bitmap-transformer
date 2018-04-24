@@ -6,7 +6,7 @@ const parseBitmap = require('./lib/parse-bitmap');
 const random = require('./lib/random');
 const invert = require('./lib/invert');
 const intensify = require('./lib/intensify');
-const dim=require('./lib/dim')
+const dim = require('./lib/dim');
 
 fs.readFile(`${__dirname}/assets/${process.argv[2]}`, (error, buffer) => {
   if (error) {
